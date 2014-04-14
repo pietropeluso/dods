@@ -67,6 +67,30 @@ body {
     margin-top: 28px;
 }
 
+.person {
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: #fff;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.highlight {
+    background-color: rgb(0, 146, 245);
+    color: #fff;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {

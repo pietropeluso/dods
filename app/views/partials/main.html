@@ -10,9 +10,25 @@
 </div>
 
 <div class="row marketing">
-  <div ng-repeat="thing in awesomeThings">
-      <h4>{{thing.name}}</h4>
-      <p>{{thing.info}}</p>
+  <div ng-repeat="data in dataset.results">
+    <div class="person" ng-class="{highlight: toHighlight(data.suspend)}">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><strong>Title:</strong> {{data.title}}</div>
+        <div class="col-xs-6 col-md-6"><strong>Id:</strong> {{data.id}}</div> 
+        <div class="col-xs-6 col-md-6"><strong>Surname:</strong> {{data.surname}}</div>
+        <div class="col-xs-6 col-md-6"><strong>Name:</strong> {{data.name}}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12"><strong>Job Title:</strong> {{data.jobTitle}}</div>
+        <div class="col-xs-12 col-md-12"><strong>Suspend:</strong> {{data.suspend}}</div>
+      </div>
+      <div class="row" ng-repeat="link in data.links">
+        <div class="col-xs-12 col-md-12"><strong>Link</strong></div>
+        <div class="col-xs-3 col-md-3 col-md-offset-1"><strong>Title:</strong> {{link.title}}</div>
+        <div class="col-xs-3 col-md-3 col-md-offset-1"><strong>Rel:</strong> {{link.rel}}</div>
+        <div class="col-xs-3 col-md-3 col-md-offset-1"><a href="{{link.href}}" target="_blank">Click me!</a></div>
+      </div>
+    </div>
   </div>
 </div>
 

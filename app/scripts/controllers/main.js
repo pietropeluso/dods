@@ -5,4 +5,9 @@ angular.module('dodsApp')
     $http.get('/api/dataset').success(function(data) {
       $scope.dataset = data;
     });
+
+    $scope.toHighlight = function(suspend) {
+      return suspend;
+    };
+
   });
