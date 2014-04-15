@@ -11,9 +11,9 @@ angular.module('dodsApp')
       });
     };
 
-    var fetchTenItems = function() {
+    var fetchNItems = function(val) {
       dodsFactory.getPeople().success(function(data){
-        $scope.dataset = data.results.splice(0, 10);
+        $scope.dataset = data.results.splice(0, val);
       });
     };
 
@@ -39,8 +39,8 @@ angular.module('dodsApp')
       }
     };
   
-    $scope.viewFirstTen = function() {
-      fetchTenItems();
+    $scope.viewFirstNelements = function(val) {
+      fetchNItems(val);
       $scope.reducedView = false;
     };
     
