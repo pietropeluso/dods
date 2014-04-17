@@ -15,7 +15,7 @@
     </div>
   </div> -->
 
-  <div ng-repeat="data in dataset">
+  <div ng-repeat="data in dataset | filter:search">
     <div class="person" ng-class="{highlight: toHighlight(data.suspend), female: isFemale(data.title)}">
       <a href="" data-toggle="modal" data-target="#myModal-{{data.id}}">
         <div class="row first-item">

@@ -101,6 +101,15 @@ body {
     width: 100%;
 }
 
+.search-box {
+    border-radius: 15px;
+    border: 1px solid rgb(223, 223, 223);
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
