@@ -10,6 +10,8 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="styles/animate-custom.css">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(app) styles/vendor.css -->
     <!-- bower:css -->
@@ -36,7 +38,7 @@
       <h4>Click on the first row of each element to pop up user details</h4>
       
       <!-- Add your site or application content here -->
-      <div ng-view=""></div>
+      <div class="content" ng-view=""></div>
 
       <div class="footer">
         <p>♥ from the Yeoman team</p>
@@ -68,6 +70,7 @@
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

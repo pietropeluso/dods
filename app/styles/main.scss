@@ -60,6 +60,15 @@ body {
     margin-bottom: 30px;
 }
 
+.content {
+    &.ng-enter {
+        -webkit-animation: fadeInUpBig 0.9s;
+        -moz-animation: fadeInUpBig 0.9s;
+        -ms-animation: fadeInUpBig 0.9s;
+        animation: fadeInUpBig 0.9s;
+    }
+}
+
 .person {
     margin-bottom: 30px;
     border-radius: 5px;
