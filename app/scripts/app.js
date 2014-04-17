@@ -12,6 +12,14 @@ angular.module('dodsApp', [
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
+      .when('/show_reduced', {
+        templateUrl: 'partials/show_reduced',
+        controller: 'ShowReducedCtrl'
+      })
+      .when('/first_ten_elements', {
+        templateUrl: 'partials/first_ten_elements',
+        controller: 'FirstTenElementsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -1,20 +1,4 @@
 <div class="row marketing">
-
-  <!-- <div class="row options-container">
-    <div class="col-xs-3 col-md-3">
-      Show options: 
-    </div>
-    <div class="col-xs-3 col-md-3">
-      <a class="btn btn-primary" style="width: 100%;" href="" ng-click="view(false)">All</a>
-    </div>
-    <div class="col-xs-3 col-md-3">
-      <a class="btn btn-primary" style="width: 100%;" href="" ng-click="viewFirstNelements(10)">First 10 elements</a>
-    </div>
-    <div class="col-xs-3 col-md-3">
-      <a class="btn btn-primary" style="width: 100%;" href="" ng-click="view(true)">Reduced layout</a>
-    </div>
-  </div> -->
-
   <div ng-repeat="data in dataset">
     <div class="person" ng-class="{highlight: toHighlight(data.suspend), female: isFemale(data.title)}">
       <a href="" data-toggle="modal" data-target="#myModal-{{data.id}}">
@@ -24,19 +8,6 @@
             <div class="col-xs-4 col-md-4"><strong>Name:</strong> {{data.name}}</div>
         </div>
       </a>
-      <div class="row item" ng-hide="isReducedView()">
-        <div class="col-xs-12 col-md-12"><strong>Job Title:</strong> {{data.jobTitle}}</div>
-      </div>
-      <div class="row item" ng-hide="isReducedView()">
-        <div class="col-xs-4 col-md-4"><strong>Id:</strong> {{data.id}}</div> 
-        <div class="col-xs-4 col-md-4"><strong>Suspend:</strong> {{data.suspend}}</div>
-      </div>
-      <div class="row item" ng-hide="isReducedView()" ng-repeat="link in data.links">
-        <div class="col-xs-12 col-md-12"><strong>Link</strong></div>
-        <div class="col-xs-3 col-md-3 col-md-offset-1"><strong>Title:</strong> {{link.title}}</div>
-        <div class="col-xs-3 col-md-3 col-md-offset-1"><strong>Rel:</strong> {{link.rel}}</div>
-        <div class="col-xs-3 col-md-3 col-md-offset-1"><a href="{{link.href}}">Click me!</a></div>
-      </div>
     </div>
 
     <!-- Modal -->
@@ -64,7 +35,5 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
-
