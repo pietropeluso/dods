@@ -11,11 +11,11 @@ angular.module('dodsApp')
       });
     };
 
-    var fetchNItems = function(val) {
-      dodsFactory.getPeople().success(function(data){
-        $scope.dataset = data.results.splice(0, val);
-      });
-    };
+    // var fetchNItems = function(val) {
+    //   dodsFactory.getPeople().success(function(data){
+    //     $scope.dataset = data.results.splice(0, val);
+    //   });
+    // };
 
     $scope.toHighlight = function(suspend) {
       return suspend;
@@ -25,24 +25,24 @@ angular.module('dodsApp')
       return title === 'Ms' || title === 'Miss' || title === 'Mrs';
     };
 
-    $scope.isReducedView = function() {
-      return $scope.reducedView;
-    };
+    // $scope.isReducedView = function() {
+    //   return $scope.reducedView;
+    // };
 
-    $scope.view = function(reduced) {
-      fetchData();
-      if (reduced) {
-        $scope.reducedView = true;
-      }
-      else {
-        $scope.reducedView = false;
-      }
-    };
+    // $scope.view = function(reduced) {
+    //   fetchData();
+    //   if (reduced) {
+    //     $scope.reducedView = true;
+    //   }
+    //   else {
+    //     $scope.reducedView = false;
+    //   }
+    // };
   
-    $scope.viewFirstNelements = function(val) {
-      fetchNItems(val);
-      $scope.reducedView = false;
-    };
+    // $scope.viewFirstNelements = function(val) {
+    //   fetchNItems(val);
+    //   $scope.reducedView = false;
+    // };
     
     fetchData();
 
